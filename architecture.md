@@ -1,77 +1,153 @@
 # System Architecture
 
 ## Overview
-This system is designed using a client-server architecture and is deployed in a cloud-based environment to ensure scalability, performance, and availability.
+The Cloud-Based Bar & Restaurant Management System is designed using a client-server architecture to support digital hospitality services through a unified platform. The system allows users to order food and drinks, book rooms, and interact with hospitality vendors through a structured web-based environment.
+
+The architecture is designed to support scalability, secure access, real-time interaction, and efficient coordination between customers, vendors, and administrative functions.
 
 ---
 
 ## Architecture Components
 
-### 1. Frontend Layer
-- Built using HTML, CSS, and JavaScript  
-- Provides user interface for customers and vendors  
-- Handles user interactions and sends requests to backend  
+### 1. Presentation Layer
+This is the user-facing layer of the system.
+
+**Responsibilities:**
+- Provide customers with access to menus, bookings, and order tracking
+- Provide vendors with dashboards for managing services
+- Enable interaction with the system through web-based interfaces
+- Support responsive access across desktop and mobile devices
+
+**Examples of functions:**
+- User registration and login pages
+- Food and drink ordering interface
+- Room booking interface
+- Vendor dashboard
+- Order and reservation status views
 
 ---
 
-### 2. Backend Layer
-- Developed using Python (Django framework)  
-- Processes business logic including:
-  - Authentication
-  - Order processing
-  - Booking management  
-- Acts as the bridge between frontend and database  
+### 2. Application Layer
+This is the backend layer where the main business logic is handled.
+
+**Responsibilities:**
+- Process user requests and workflows
+- Handle authentication and role-based access control
+- Manage food orders, room bookings, and vendor operations
+- Coordinate communication between the user interface and database layer
+
+**Examples of functions:**
+- Validating login and user roles
+- Processing orders and bookings
+- Updating menu and room availability
+- Managing vendor service workflows
+- Handling transaction logic and system updates
 
 ---
 
 ### 3. Database Layer
-- MySQL relational database  
-- Stores:
-  - User data  
-  - Orders and transactions  
-  - Menu and booking information  
-- Ensures efficient data retrieval and consistency  
+This layer stores and manages all structured system data.
 
----
+**Responsibilities:**
+- Store user account and authentication information
+- Store vendor profiles and service listings
+- Store food, drinks, and room booking records
+- Store order history, transaction records, and availability data
 
-### 4. Cloud Layer
-- System designed for cloud deployment  
-- Supports scalability for multiple users and vendors  
-- Enables high availability and performance optimisation  
+**Core data entities:**
+- Users
+- Vendors
+- Menus
+- Orders
+- Bookings
+- Payments
+- Availability records
 
 ---
 
 ## System Flow
 
-1. User sends request via web interface  
-2. Request is processed by Django backend  
-3. Backend communicates with MySQL database  
-4. Data is retrieved or updated  
-5. Response is returned to the user  
+1. A user accesses the platform through a web interface  
+2. The request is sent to the application layer  
+3. The backend applies business logic and validates the action  
+4. The database is queried or updated based on the request  
+5. The result is returned to the user interface in real time  
+
+This flow supports efficient handling of customer requests, vendor actions, and administrative control.
 
 ---
 
-## Networking Concepts
+## Architectural Style
+The system follows a **client-server architecture** with a layered design structure:
 
-- Client-server communication over HTTP/HTTPS  
-- Secure data transmission  
-- Multi-user request handling  
-- Distributed system design principles  
+- **Client side:** Handles user interaction and request submission  
+- **Server side:** Handles business logic, workflows, and processing  
+- **Database side:** Handles persistent storage, retrieval, and updates  
+
+This structure improves modularity, maintainability, and future scalability.
 
 ---
 
-## Scalability Considerations
+## Networking Concepts Applied
+The project reflects important networking and connected-system concepts, including:
 
-- Modular system architecture  
-- Database optimisation for high performance  
-- Ability to scale horizontally in cloud environments  
+- client-server communication
+- request and response handling across networked environments
+- real-time service interaction between users and vendors
+- multi-user access to shared system resources
+- secure communication for authentication and transactions
+
+These concepts are relevant to both networking and cloud-based service delivery.
 
 ---
 
 ## Security Considerations
+The architecture includes security-focused design concepts such as:
 
-- Role-based access control (RBAC)  
-- Secure authentication mechanisms  
-- Data protection and controlled access  
+- user authentication
+- role-based access control
+- secure handling of account and vendor data
+- controlled access to administrative and vendor features
+- structured handling of order and booking information
+
+These controls are important in ensuring data integrity and protecting access to system functions.
 
 ---
+
+## Scalability Considerations
+The system was designed with future scalability in mind.
+
+Possible scalability enhancements include:
+- hosting on cloud infrastructure such as AWS or Azure
+- supporting multiple vendors across different regions
+- handling increasing order and booking volumes
+- optimising database performance for larger datasets
+- integrating monitoring and logging for production environments
+
+---
+
+## Cloud Relevance
+The system aligns strongly with cloud-engineering principles because it demonstrates:
+
+- service-oriented system design
+- scalable application architecture
+- multi-user digital service delivery
+- secure access management
+- backend and database integration suitable for cloud hosting
+
+The design provides a practical foundation for future deployment in cloud environments.
+
+---
+
+## Business Value
+The system creates business value by:
+- improving convenience for customers
+- digitising hospitality workflows
+- helping vendors manage services more efficiently
+- increasing service accessibility and operational efficiency
+- supporting a scalable digital model for hospitality businesses
+
+---
+
+## Conclusion
+The Cloud-Based Bar & Restaurant Management System architecture demonstrates a structured and scalable approach to designing a real-world hospitality platform. It highlights strengths in system design, backend workflow planning, database integration, security awareness, and cloud-oriented thinking, making it highly relevant to cloud, networking, and infrastructure-focused roles.
