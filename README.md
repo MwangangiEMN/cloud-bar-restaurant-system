@@ -1,5 +1,11 @@
 # Cloud-Based Bar & Restaurant Management System
+## 🚀 Key Highlights
 
+- Multi-user system design  
+- Role-based access control  
+- Scalable architecture  
+- Cloud-ready system design  
+- Backend and database integration  
 ## Overview
 This project is a scalable cloud-based hospitality platform designed to modernise how users access food, drinks, and accommodation services through a unified system.
 
