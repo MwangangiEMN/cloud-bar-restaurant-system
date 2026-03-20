@@ -41,7 +41,7 @@ The system is designed with scalability, performance, and accessibility in mind,
 ---
 
 ## Technologies Used
-
+- Designed with future deployment to AWS/Azure cloud environments in mind
 ### Frontend
 - HTML  
 - CSS  
